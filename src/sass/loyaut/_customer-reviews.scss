@@ -1,0 +1,96 @@
+.customer-reviews-section {
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+.customer-reviews {
+  text-align: center;
+}
+.customer-reviews__img {
+  margin-bottom: 25px;
+}
+.customer-reviews__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 52px;
+  padding: 43px 66px 26px 57px;
+  background-color: $customer-reviews-background;
+  @media screen and (min-width: 768px) {
+    padding: 47px 80px 34px 80px;
+    margin-bottom: 42px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 47px 89px 39px 87px;
+    margin-bottom: 34px;
+  }
+}
+.customer-reviews__box::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  bottom: -30px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('../images/mob.img/galary/group-8.png');
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customer-reviews__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  color: $description-color;
+  background-image: repeating-linear-gradient(
+    to top,
+    $repeating-linear-gradient,
+    $repeating-linear-gradient 1px,
+    transparent 1px,
+    transparent 31px
+  );
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+.customer-reviews__icon {
+  position: absolute;
+  top: 26px;
+  left: 59px;
+  fill: $repeating-linear-gradient;
+  opacity: 0.7;
+}
+.customer-reviews__text-place {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+// Slider-list
+.slider-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-list__item:not(:last-child) {
+  margin-right: 18px;
+}
