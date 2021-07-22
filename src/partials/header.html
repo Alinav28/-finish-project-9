@@ -1,0 +1,97 @@
+<header class="header-section">
+    <div id="header" class="container header-section__mobile">
+        <a href="" class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </a>
+        <nav class="navigation-desktop">
+            <ul class="navigation-desktop__list">
+                <li class="navigation-desktop__item"><a href="#header" class="navigation-desktop__link highlighted">Home</a></li>
+                <li class="navigation-desktop__item"><a href="#advantages" class="navigation-desktop__link">About us</a></li>
+                <li class="navigation-desktop__item"><a href="#about" class="navigation-desktop__link">How it’s made?</a></li>
+                <li class="navigation-desktop__item"><a href="#products" class="navigation-desktop__link">Our products</a></li>
+                <li class="navigation-desktop__item"><a href="#contacts" class="navigation-desktop__link">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="header-section__buttons-list">
+            <li>
+                <button type="button" class="header-section__burger-menu">
+                    <svg width="20" height="14">
+                        <use href="./images/sprite.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
+            </li>
+            <li header-section__buttons-item>
+                <button data-modal-open type="submit" class="header-section__submit-button">Buy now
+                    <svg width="14" height="14" class="mobile-menu__submit-icon">
+                        <use href="./images/sprite.svg#icon-button-arrow"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu is-hidden">
+        <div class="mobile-menu__container">
+            <button data-modal-open type="button" class="mobile-menu__close-button">
+                <svg width="14" height="14">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <button data-modal-open type="submit" class="header-section__submit-button-mob">Buy now
+                <svg width="14" height="14" class="mobile-menu__submit-icon">
+                    <use href="./images/sprite.svg#icon-button-arrow"></use>
+                </svg>
+            </button>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#header" class="navigation__link highlighted">Home</a></li>
+                    <li class="navigation__item"><a href="#advantages" class="navigation__link">About us</a></li>
+                    <li class="navigation__item"><a href="#about" class="navigation__link">How it’s made?</a></li>
+                    <li class="navigation__item"><a href="#products" class="navigation__link">Our products</a></li>
+                    <li class="navigation__item"><a href="#contacts" class="navigation__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="header-section__icon-close" type="button"><svg width="16" height="16">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg></button>
+            <form action="#" class="modal__form">
+                <p class="modal__provoke-text">Make an order for yammy</p>
+                <div class="modal__form-group">
+                    <label class="modal__label" for="username">Name</label>
+                    <input type="text" name="name" id="username" class="modal__input" minlength="2">
+                </div>
+                <div class="modal__form-group">
+                    <label for="user-phone" class="modal__label">Phone</label>
+                    <input type="tel" name="phone_number" id="user-phone" class="modal__input">
+                </div>
+                <div class="modal__form-group">
+                    <label for="user-contact" class="modal__label">Email</label>
+                    <input type="email" name="email" id="user-contact" class="modal__input">
+                </div>
+                <div class="modal__form-group">
+                    <label for="comment" class="modal__label">Comment</label>
+                    <textarea name="feedback" id="comment" class="modal__comment" placeholder="Write here"></textarea>
+                </div>
+                <div class="modal__checkbox">
+                    <input type="checkbox" name="user-agree" id="checkbox" class="visually-hidden modal__checkbox-input"
+                        required>
+                    <label for="checkbox" class="modal__checkbox-label">
+                        <span><span>
+                                <svg width="18" height="18" class="modal__checkbox-icon">
+                                    <use href="./images/sprite.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                        </span>I promise I will not explode
+                        <!-- &nbsp;<a href="" class="modal__checkbox-link">Условия договора</a> -->
+                    </label>
+                    <button type="submit" class="modal__button">Buy now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>

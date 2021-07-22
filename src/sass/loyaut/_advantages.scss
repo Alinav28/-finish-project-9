@@ -4,29 +4,52 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 59px;
-  max-width: 320px;
+  // max-width: 320px;
   background-color: $product-background;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 125px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding: 0 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 120px;
+    padding: 0 115px 59px 115px;
+  }
 }
 
 .advantage-section__list {
   display: block;
 
-  //   @media screen and (min-width: 1200px) {
-  //     & > .advantage-section:first-child {
-  //       margin-left: 0px;
-  //     }
-  //   }
+  @media screen and (min-width: 1200px) {
+    & > .advantage-section:first-child {
+      margin-left: 0px;
+    }
+  }
 
-  //   @media (min-width: 768px) and (max-width: 1199px) {
-  //     display: grid;
-  //     grid-template-columns: repeat(2, 354px);
-  //     gap: 30px;
-  //   }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 60px;
+    justify-content: center;
+  }
 
-  //   @media screen and (min-width: 1200px) {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //   }
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 30px;
+    justify-content: center;
+  }
 }
 .advantage-section__item {
   width: 230px;
@@ -63,17 +86,18 @@
     background-position: left;
   }
 
-  //   @media screen and (min-width: 768px) {
-  //     width: 354px;
-  //     margin-right: 0px;
-  //   }
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 
-  //   @media screen and (min-width: 1200px) {
-  //     width: 270px;
-  //     margin-left: 30px;
-  //     margin-right: 0;
-  //   }
-  // }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+    margin-left: 0;
+    margin-right: 0;
+    // padding-right: 50px;
+  }
 
   .advantage-section__text {
     color: $description-color;
@@ -85,6 +109,16 @@
     letter-spacing: 0.03em;
     padding-top: 15px;
     padding-bottom: 38px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      padding-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      padding-bottom: 80px;
+    }
   }
   .advantage-section__title {
     color: $title-color;
@@ -97,9 +131,15 @@
 
     margin-bottom: 0px;
     margin-top: 0px;
-  }
 
-  //   @media screen and (min-width: 768px) {
-  //     text-align: left;
-  //   }
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      margin-top: 45px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      margin-top: 50px;
+    }
+  }
 }
