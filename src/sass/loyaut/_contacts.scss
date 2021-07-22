@@ -312,19 +312,36 @@
 //
 //
 ////descktop
+@media (min-device-pixel-retion: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-resolution: 768px),
+  (min-resolution: 2dppx) and (min-resolution: 768px) {
+  .contacts {
+    width: 100%;
+    background-image:  url(./../images/contacts/contacts-2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
 @media screen and (min-width: 1200px) {
   .conacts-section {
-    background-image: linear-gradient($text-color 10%, $product-background 0%);
+    background-image: linear-gradient(
+      $text-color 8%, 
+      $product-background 0%,);
     padding-bottom: 165px;
+    background-size: cover;
+   background-repeat: no-repeat;
+  }
+  .contacts {
+    width: 100%;
+    background-image:  url(./../images/contacts/contacts-1x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .contact__cards-list {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     margin-bottom: 86px;
-  }
-  .contacts {
-    background-image: url(./../images/contacts/contacts-1x.png);
   }
   .contact__cards-item {
     width: 330px;

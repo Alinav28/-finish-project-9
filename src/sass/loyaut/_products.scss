@@ -3,7 +3,7 @@
   padding-bottom: 98px;
 }
 .title1 {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: normal;
@@ -15,6 +15,7 @@
   color: $second-color;
 }
 .title2 {
+  margin-bottom: 144px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: normal;
@@ -142,7 +143,6 @@
 }
 .products__list {
   display: block;
-  padding-top: 144px;
 }
 .products__list-item:not(:last-child) {
   margin-bottom: 130px;
@@ -155,7 +155,6 @@
   .products__list {
     display: flex;
     justify-content: center;
-    padding-top: 150px;
   }
   .products__list-item:not(:last-child) {
     margin-right: 20px;
@@ -214,6 +213,7 @@
   .title2 {
     font-size: 48px;
     line-height: 55px;
+    margin-bottom: 150px;
   }
   .title3 {
     width: 199px;
@@ -249,6 +249,7 @@
     font-size: 58px;
     line-height: 66px;
     letter-spacing: 0.06em;
+    margin-bottom: 259px;
   }
   .products__list-item-container {
     &::before {
@@ -300,9 +301,6 @@
     height: 525px;
     justify-content: center;
   }
-  .products__list {
-    padding-top: 259px;
-  }
   .title3 {
     width: 209px;
     font-size: 30px;
@@ -329,7 +327,7 @@
     top: 267px;
   }
   .button {
-    top: 215px;
+    top: 415px;
     left: 145px;
   }
 }
