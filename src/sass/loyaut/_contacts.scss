@@ -119,6 +119,11 @@
     position: relative;
     background: $footer-background-button;
     color: $text-color;
+    &:hover,
+    &:focus {
+      background: $hero-mobile-background-color;
+    }
+    margin-bottom: 10px;
   }
   .conacts-button-svg {
     margin: 0 auto;
@@ -281,6 +286,11 @@
     position: relative;
     background: $footer-background-button;
     color: $text-color;
+    &:hover,
+    &:focus {
+      background: $hero-mobile-background-color;
+    }
+    margin-bottom: 0 auto;
   }
   .conacts-button-svg {
     margin: 0 auto;
@@ -317,23 +327,21 @@
   (min-resolution: 2dppx) and (min-resolution: 768px) {
   .contacts {
     width: 100%;
-    background-image:  url(./../images/contacts/contacts-2x.png);
+    background-image: url(./../images/contacts/contacts-2x.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 1200px) {
   .conacts-section {
-    background-image: linear-gradient(
-      $text-color 8%, 
-      $product-background 0%,);
+    background-image: linear-gradient($text-color 8%, $product-background 0%);
     padding-bottom: 165px;
     background-size: cover;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
   }
   .contacts {
     width: 100%;
-    background-image:  url(./../images/contacts/contacts-1x.png);
+    background-image: url(./../images/contacts/contacts-1x.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -461,6 +469,10 @@
     position: relative;
     background: $footer-background-button;
     color: $text-color;
+    &:hover,
+    &:focus {
+      background: $hero-mobile-background-color;
+    }
   }
   .conacts-button-svg {
     margin: 0 auto;
@@ -486,5 +498,238 @@
     right: 28px;
     width: 6.61px;
     height: 11px;
+  }
+}
+//}
+//
+//
+//
+//
+//
+/*модальное окно*/
+.conacts-bakdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.conacts-bt-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $footer-background-button;
+  }
+}
+.bt-close-svg {
+  width: 14px;
+  height: 14px;
+}
+.conacts-modal {
+  width: 320px;
+  position: absolute;
+  display: block;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient($product-card-color, $hero-mobile-background-color);
+  border-radius: 18px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.conacts-map-name {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  margin-bottom: 30px;
+}
+.conacts-map-list {
+  display: flex;
+  flex-direction: column;
+}
+.conacts-map-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.conacts-map-bt {
+  width: 194px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  padding-left: 17px;
+  padding-right: 29.45px;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+  background: $footer-background-button;
+  color: $text-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: $hero-mobile-background-color;
+  }
+}
+//
+//
+//
+//
+//
+.conacts-bakdrop-franchise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.conacts-bt-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $footer-background-button;
+  }
+}
+.bt-close-svg {
+  width: 14px;
+  height: 14px;
+}
+.conacts-modal-franchise {
+  width: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient($product-card-color, $hero-mobile-background-color);
+  border-radius: 18px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.conacts-franchise-name {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+  margin-bottom: 30px;
+}
+.conacts-franchise__label {
+  display: block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #d41443;
+}
+.conacts-franchise__input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  padding-left: 10px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 21px;
+  color: #d41443;
+  background-color: $product-card-color;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.conacts-franchise__input:hover,
+.conacts-franchise__input:focus {
+  background-color: $repeating-linear-gradient;
+}
+.conacts-franchise-lict {
+  margin-bottom: 25px;
+}
+.conacts-franchise-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.conacts-franchise-bt {
+  width: 194px;
+  height: 44px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  padding-left: 17px;
+  padding-right: 29.45px;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: $footer-background-button;
+  color: $text-color;
+  &:hover,
+  &:focus {
+    background: $hero-mobile-background-color;
   }
 }

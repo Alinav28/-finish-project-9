@@ -74,6 +74,11 @@
   .footer-contact-linc {
     color: #d41443;
   }
+
+  .footer-contact-linc:focus,
+  .footer-contact-linc:hover {
+    color: $hero-mobile-background-color;
+  }
   .footer-information-line {
     background: rgb(255, 245, 246);
   }
